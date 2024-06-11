@@ -51,22 +51,26 @@ public class Main {
 
       double x = 2;
       double y = 2;
+      double result = calculate(x,y);
 //      double xSquared = Math.pow(x,2);
 //      double parenthesisPortion = 4 * y / 5 - x;
 //      double parenthesisSquared = Math.pow(parenthesisPortion, 2);
 
 //        System.out.println(xSquared + parenthesisSquared);
 
-        double result = calculate(x,y);
-        System.out.println(result);
+
+      System.out.println(result);
 
     }
     public static double calculate(double x, double y){
-        double xSquared = Math.pow(x,2);
-        double parenthesisPortion = 4 * y / 5 - x;
-        double parenthesisSquared = Math.pow(parenthesisPortion, 2);
 
-        return xSquared + parenthesisSquared;
+        return Math.pow(x, 2) + Math.pow(((4*y)/5) - x, 2);
+
+//        double xSquared = Math.pow(x,2);
+//        double parenthesisPortion = 4 * y / 5 - x;
+//        double parenthesisSquared = Math.pow(parenthesisPortion, 2);
+
+//        return xSquared + parenthesisSquared;
 
 
     }
