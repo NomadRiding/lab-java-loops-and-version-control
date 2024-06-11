@@ -42,5 +42,32 @@ public class Main {
 
         System.out.println(smallest);
         System.out.println(secondSmallest);
+
+
+        //Third Task Write a Java method that calculates the result of the following mathematical expression, where x and y are two variables that have been pre-set in your code:
+        // x squared PLUS PARENTHESES 4y div 5 minus x END PARENTHESES squared
+
+        //This was my attempt; My code works, but when I checked with AI I was advised to make it more legible
+
+      double x = 2;
+      double y = 2;
+//      double xSquared = Math.pow(x,2);
+//      double parenthesisPortion = 4 * y / 5 - x;
+//      double parenthesisSquared = Math.pow(parenthesisPortion, 2);
+
+//        System.out.println(xSquared + parenthesisSquared);
+
+        double result = calculate(x,y);
+        System.out.println(result);
+
+    }
+    public static double calculate(double x, double y){
+        double xSquared = Math.pow(x,2);
+        double parenthesisPortion = 4 * y / 5 - x;
+        double parenthesisSquared = Math.pow(parenthesisPortion, 2);
+
+        return xSquared + parenthesisSquared;
+
+
     }
 }
